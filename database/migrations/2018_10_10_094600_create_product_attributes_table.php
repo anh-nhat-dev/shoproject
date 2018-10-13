@@ -17,7 +17,7 @@ class CreateProductAttributesTable extends Migration
             $table->increments('attribute_id');
             $table->integer('product_id')->unsigned();
             $table->string('name');
-            $table->string('slug')->unique();
+            $table->string('slug');
             $table->timestamps();
 
             $table->foreign('product_id')

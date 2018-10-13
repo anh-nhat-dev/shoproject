@@ -23,30 +23,30 @@
             <li><a href="blogs.html" class="waves-effect"><i class="icon-feed"></i>
                     <span class="hide-menu">Blogs</span></a>
             </li>
-            <li> <a href="product-list.html" class="waves-effect "><i  class="fa fa-cubes"></i>
+            <li> <a href="" class="waves-effect "><i  class="fa fa-cubes"></i>
                     <span class="hide-menu">Products<span class="fa arrow"></span> <span class="label label-rouded label-info pull-right">13</span>
                     </span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="product-list.html">List Products</a></li>
-                    <li><a href="product-add.html">Add products</a></li>
+                    <li><a href="{{route('admin.product.index')}}">List Products</a></li>
+                    <li><a href="{{route('admin.product.add')}}">Add products</a></li>
                 </ul>
             </li>
-            <li> <a href="cates.html" class="waves-effect"><i  class="icon-folder-alt"></i>
+            <li> <a href="" class="waves-effect"><i  class="icon-folder-alt"></i>
                     <span class="hide-menu">Categories<span class="fa arrow"></span></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="cates.html">List Categories</a></li>
-                    <li><a href="cates-add.html">Add Categories</a></li>
+                    <li><a href="{{route('admin.cate.index')}}">List Categories</a></li>
+                    <li><a href="{{route('admin.cate.add')}}">Add Categories</a></li>
                 </ul>
             </li>
             <li> <a href="orders.html" class="waves-effect"><i class="icon-drawar"></i>
                 <span class="hide-menu">Orders</span></a>
         </li>
             <li class="nav-small-cap">--- Manager</li>
-            <li> <a href="users.html" class="waves-effect"><i class="icon-people"></i>
+            <li> <a href="" class="waves-effect"><i class="icon-people"></i>
                     <span class="hide-menu">Users<span class="fa arrow"></span><span class="label label-rouded label-purple pull-right">30</span></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="users.html">List Users</a></li>
-                    <li><a href="users-add.html">Add Users</a></li>
+                    <li><a href="{{route('admin.user.index')}}">List Users</a></li>
+                    <li><a href="{{route('admin.user.add')}}">Add Users</a></li>
                     <li><a href="roles.html">Roles</a></li>
                 </ul>
             </li>

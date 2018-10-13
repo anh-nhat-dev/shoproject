@@ -20,9 +20,9 @@
             
             <li class="dropdown">
                 <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"> <img src="../plugins/images/users/varun.jpg"
-                        alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Steave</b> </a>
+                        alt="user-img" width="36" class="img-circle"><b class="hidden-xs">{{Auth::user()->email}}</b> </a>
                 <ul class="dropdown-menu dropdown-user animated flipInY">
-                    <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                    <li><a href="{{route('site.logout')}}"><i class="fa fa-power-off"></i> Logout</a></li>
                 </ul>
                 {{-- /.dropdown-user --}}
             </li>

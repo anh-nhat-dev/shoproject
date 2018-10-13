@@ -6,10 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Support\PasswordHashing;
 
-class User extends Authenticatable
+class User extends Authenticatable 
 {
-    use Notifiable;
+    use Notifiable, PasswordHashing;
 
     /**
      * The attribute table name
@@ -31,7 +32,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-         'email', 'password',
+         'email', 'password','phone', 'fullname', 'address', 'role_id'
     ];
 
     /**
@@ -39,7 +40,9 @@ class User extends Authenticatable
      *
      * @var array
      */
+    
     protected $hidden = [
         'password', 'remember_token',
     ];
+
 }

@@ -19,12 +19,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
     {{-- Bootstrap Core CSS --}}
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     {{-- Menu CSS --}}
+    @yield('style')
     <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
     {{-- Animation CSS --}}
     <link href="css/animate.css" rel="stylesheet">
     {{-- Custom CSS --}}
     <link href="css/style.css" rel="stylesheet">
-    @yield('style')
+   
     {{-- color CSS you can use different color css from css/colors folder --}}
     {{-- We have chosen the skin-blue (blue.css) for this starter
           page. However, you can choose any other skin from folder css / colors .

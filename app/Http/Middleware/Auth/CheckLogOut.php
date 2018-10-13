@@ -19,7 +19,6 @@ class CheckLogOut
         if (Auth::guest()) {
             return redirect()->route('site.login');
         }
-
         return $next($request);
     }
 }
